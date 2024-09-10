@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Портфолио</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            line-height: 1.6;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+            color: #333;
+        }
+
+        header {
+            background: #333;
+            color: #fff;
+            padding: 1rem 0;
+            text-align: center;
+        }
+
+        header h1 {
+            margin: 0;
+            font-size: 2rem;
+            font-weight: bold;
+        }
+
+        main {
+            padding: 1rem;
+        }
+
+        .portfolio-gallery {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 20px;
+            justify-content: center;
+        }
+
+        .portfolio-item {
+            flex: 1 1 calc(33% - 20px);
+            background: #fff;
+            border: 1px solid #ddd;
+            border-radius: 12px;
+            overflow: hidden;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        .portfolio-item:hover {
+            transform: scale(1.03);
+            box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+        }
+
+        .portfolio-item img {
+            width: 100%;
+            height: auto;
+            display: block;
+        }
+
+        .portfolio-item h2 {
+            margin: 0.5rem 1rem;
+            font-size: 1.4rem;
+            color: #333;
+        }
+
+        .portfolio-item p {
+            margin: 0 1rem 1rem;
+            font-size: 1rem;
+            color: #666;
+        }
+
+        footer {
+            background: #333;
+            color: #fff;
+            padding: 1rem;
+            text-align: center;
+            margin-top: 2rem;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Портфолио</h1>
+    </header>
+    
+    <main>
+        <section class="portfolio-gallery">
+            <article class="portfolio-item">
+                <img src="https://i.postimg.cc/sgShcMB1/8c8c355a-c235-4c66-b766-134b67c58863.jpg" alt="Динамическая конструкция">
+                <h2>Динамическая конструкция</h2>
+                <p>Современная 3D-модель, демонстрирующая сложную и динамичную архитектурную форму.</p>
+            </article>
+            <article class="portfolio-item">
+                <img src="https://i.postimg.cc/xd2bF9H5/93548cbc-4fa4-4ec9-9255-ff2377e5871e.jpg" alt="Минималистичный интерьер">
+                <h2>Минималистичный интерьер</h2>
+                <p>Элегантный и лаконичный дизайн интерьера с акцентом на простоту и функциональность.</p>
+            </article>
+            <!-- Добавьте больше элементов по аналогии -->
+        </section>
+    </main>
+
+    <footer>
+        <p>© 2024 Ваше Имя. Все права защищены.</p>
+    </footer>
+</body>
+</html>
